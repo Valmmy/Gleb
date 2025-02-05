@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Почему Глеб идёт нахуй?</title>
+    <style>
+        /* Общие стили */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Навигационное меню */
+        nav {
+            background-color: #ff4757;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffdd57;
+        }
+
+        /* Основной контент */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            color: #ff6b6b;
+            font-size: 1.8em;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .hidden{
+            display: none;
+        }
+
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4757;
+        }
+
+        #secretMessage {
+            font-size: 1.5em;
+            color: #ff4757;
+            margin-top: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Почему Глеб идёт нахуй?</h1>
+    </header>
+
+    <!-- Навигационное меню -->
+    <nav>
+        <a href="#about">О Глебе</a>
+        <a href="#reasons">Причины</a>
+        <a href="https://www.roblox.com/games/2753915549/Blox-Fruits">Жоскоегейпорнапе8вгтщ</a>
+    </nav>
+
+    <!-- Основной контент -->
+    <main>
+        <div class="card" id="about">
+            <h2>Кто такой Глеб?</h2>
+            <p>
+                Глеб — это человек, который, по мнению многих, заслуживает особого внимания. 
+                Его поступки и решения часто вызывают вопросы, он на кой то хуй редко отвечает на мои тиктоки и именно поэтому он идёт нахуй.
+            </p>
+        </div>
+
+        <div class="card" id="reasons">
+            <h2>Почему Глеб идёт нахуй?</h2>
+            <p>
+                Причин может быть множество. Возможно, он не смог набить гол в блю локе, 
+                не сделал огонек в тиктоке или просто потому, что он — Глеб.
+            </p>
+            <button onclick="revealSecret()">Узнать главную причину</button>
+            <div id="secretMessage" class="hidden">
+                Главная причина: потому что он — <strong>хуйл аоаоаоо ой тоесть Глеб</strong>!
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Почему Глеб идёт нахуй? Все права защищены.</p>
+    </footer>
+
+    <script>
+        function revealSecret() {
+            const secretMessage = document.getElementById('secretMessage');
+            secretMessage.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
